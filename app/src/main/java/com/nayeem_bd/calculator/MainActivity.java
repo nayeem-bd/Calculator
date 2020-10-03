@@ -1,6 +1,8 @@
 package com.nayeem_bd.calculator;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -185,5 +187,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return "";
         }
         return result.toString();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_layout,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }
