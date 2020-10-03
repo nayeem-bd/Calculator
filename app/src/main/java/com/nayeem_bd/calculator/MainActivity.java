@@ -207,14 +207,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 goto_settingActivity();
                 break;
             case R.id.historyMenuItemId:
-
+                goto_historyActivity();
                 break;
             case R.id.aboutusMenuItemId:
-
+                goto_aboutusActivity();
                 break;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goto_historyActivity() {
+        Intent intent = new Intent(getApplicationContext(),HistoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void goto_aboutusActivity() {
+        Intent intent = new Intent(getApplicationContext(),AboutUsActivity.class);
+        startActivity(intent);
     }
 
     public void goto_settingActivity() {
