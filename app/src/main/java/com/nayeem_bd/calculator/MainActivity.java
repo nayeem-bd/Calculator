@@ -1,13 +1,16 @@
 package com.nayeem_bd.calculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.udojava.evalex.Expression;
@@ -194,5 +197,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_layout,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.settingMenuItemId:
+                goto_settingActivity();
+                break;
+            case R.id.historyMenuItemId:
+
+                break;
+            case R.id.aboutusMenuItemId:
+
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void goto_settingActivity() {
+        Intent intent = new Intent(getApplicationContext(),SettingActivity.class);
+        startActivity(intent);
     }
 }
