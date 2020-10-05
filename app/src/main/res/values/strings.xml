@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string name="about_myself">
+        I am Md. Nimuzzaman.
+        I am reading at Rajshahi University dept. of Information and Communication Engineering .
+        I am a competetive programmer and also andoid developer.
+    </string>
 </resources>
