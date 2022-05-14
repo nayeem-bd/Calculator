@@ -5,5 +5,5 @@ It is a simple calculator. It is written in java programming language in Android
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/nayeem-bd/Calculator/blob/master/app/src/main/res/drawable/calculator_screenshot.jpg)
 
