@@ -1,7 +1,7 @@
 
 # Calculator
 
-It is a simple calculator. It is written in java programming language in Android Studio. I use a calculating api to evaluate.
+It is a simple calculator. It is written in java programming language in Android Studio. 
 
 ## Screenshots
 
